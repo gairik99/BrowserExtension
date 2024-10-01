@@ -17,7 +17,7 @@ function App() {
       type: 'NAME',
       payload: userName
     })
-  }, [])
+  }, [browserDispatch])
 
 
   return (
