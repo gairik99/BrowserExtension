@@ -1,3 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
 .task-container {
   color: var(--text-color-primary);
+  padding-top: 4rem;
+  height: 100vh;
+  position: relative;
+}
+.time {
+  font-size: 8rem;
+}
+.message {
+  font-size: 4rem;
+}
+.focus-today {
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+}
+.input-task {
+  font-size: 2rem;
+  width: 40vw;
+}
+
+.label {
+  cursor: pointer;
+}
+
+.check {
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+  appearance: none; /* Hides default checkbox */
+  border: 2px solid #007bff; /* Border color */
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.check:checked {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.check:checked::after {
+  content: " ";
+  display: block;
+  width: 8px;
+  height: 8px;
+  margin: auto;
+  background-color: white;
+  border-radius: 3px;
+}
+
+.label:hover .check {
+  border-color: #0056b3; /* Slight color change on hover */
+}
+.strike-through {
+  text-decoration: line-through;
+}
+.button {
+  background-color: transparent;
+  border: none;
+  color: var(--text-color-primar);
+  margin-top: auto;
+}
+.button:hover {
+  cursor: pointer;
+}
+
+.quote-container {
+  width: 80vw;
+  position: absolute;
+  padding: 0.8rem;
+  bottom: 3rem;
+  text-align: center;
 }

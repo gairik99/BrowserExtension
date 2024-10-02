@@ -24,7 +24,7 @@ function Home() {
             <div className='user-details d-flex direction-column gap'>
                 <span className='heading-1'>Hi,what's your name?</span>
                 <form onSubmit={handleFormSubmit}>
-                    <input className='input' onKeyDown={handleNameChange} />
+                    <input className='input' required onKeyDown={handleNameChange} />
                 </form>
             </div>
         </div>

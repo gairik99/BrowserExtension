@@ -1,13 +1,17 @@
 import './App.css';
 import { images } from './db/images';
-import Home from './pages/Home/Home';
+import { Home, Task } from './pages';
 import { useBrowser } from './context/browser-context';
-import Task from './pages/Task/Task';
 import { useEffect } from 'react';
 
+
+const index = Math.floor(Math.random() * images.length);
+const bgImage = images[index].image;
+
+
 function App() {
-  const index = Math.floor(Math.random() * images.length);
-  const bgImage = images[index].image;
+  // const index = Math.floor(Math.random() * images.length);
+  // const bgImage = images[index].image;
   // console.log(bgImage);
   const { name, browserDispatch } = useBrowser();
   // console.log('name-', name);
