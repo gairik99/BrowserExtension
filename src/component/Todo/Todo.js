@@ -38,7 +38,7 @@ export const Todo = () => {
                 {
                     todoList && todoList.map(({ _id, isCompleted, todo }) => {
                         return (
-                            <div key={_id} className='todo-items d-flex align-center'>
+                            <div key={_id} className='todo-items d-flex align-center '>
                                 <label className={`${isCompleted ? 'strike-through' : ''} todo-label`}><input type='checkbox' className='todo-check' onChange={() => handleTodoChange(_id)} checked={isCompleted} />{todo}
                                 </label>
                                 <button className='button todo-clear-btn' onClick={() => handleDelete(_id)}>
