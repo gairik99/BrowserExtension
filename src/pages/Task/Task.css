@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
+
 .task-container {
   color: var(--text-color-primary);
   padding-top: 4rem;
@@ -67,9 +68,18 @@
 }
 
 .quote-container {
-  width: 80vw;
+  width: 60vw;
   position: absolute;
   padding: 0.8rem;
   bottom: 3rem;
   text-align: center;
+}
+
+.todo-btn {
+  font-size: 1.3rem;
+}
+
+.todo-btn-container {
+  right: 2rem;
+  bottom: 2rem;
 }

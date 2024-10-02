@@ -2,19 +2,27 @@ import React, { useEffect, useCallback, Fragment, useState } from 'react'
 import './Task.css'
 import { useBrowser } from '../../context/browser-context';
 import { quotes } from '../../db/quotes'
+import { Todo } from '../../component/Todo/Todo';
 
 const index = Math.floor(Math.random() * quotes.length);
 const quote = quotes[index].quote;
 
 function Task() {
     const [isChecked, setChecked] = useState(JSON.parse(localStorage.getItem('checkedStatus')) || false);
+    const [isTodoOpen, setTodoOpen] = useState(false);
     const { browserDispatch, time, message, name, task } = useBrowser();
+
     useEffect(() => {
         const userTask = localStorage.getItem('task');
         browserDispatch({
             type: 'TASK',
             payload: userTask
         })
+        if (new Date().getDate() !== JSON.parse(localStorage.getItem('date'))) {
+            localStorage.removeItem('task');
+            localStorage.removeItem('date');
+            localStorage.removeItem('checkedStatus');
+        }
     }, [browserDispatch])
 
     const getCurrentTime = useCallback(() => {
@@ -66,9 +74,12 @@ function Task() {
         localStorage.removeItem('checkedStatus');
 
     }
+    const handleTodoClick = () => {
+        setTodoOpen(isTodoOpen => !isTodoOpen);
+    }
 
     return (
-        <div className='task-container d-flex direction-column align-center '>
+        <div className='task-container d-flex direction-column align-center relative '>
             <span className='time'>{time}</span>
             <span className='message'>{message}, {name}</span>
             {name !== null && task === null ? (<Fragment>
@@ -96,7 +107,10 @@ function Task() {
             <div className='quote-container '>
                 <span className='heading-3'>{quote}</span>
             </div>
-
+            {isTodoOpen ? <Todo /> : ''}
+            <div className='todo-btn-container absolute'>
+                <button className='button cursor todo-btn' onClick={handleTodoClick}>ToDo</button>
+            </div>
 
         </div>
     )
