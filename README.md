@@ -22,16 +22,18 @@ In the task page, you can add your main/focus task of the day, once you complete
 ##  Tech Stack
 - HTML/CSS
 - ReactJs
-##  Tech Stack
-- HTML/CSS
-- ReactJs
 ## Live Link
 
 - https://dailyroutinemanager.netlify.app
   
 ## Add Extension to Firefox
 - https://addons.mozilla.org/en-US/firefox/addon/easy-life-browser-extension/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search
+  
 ## Demo
+![Screenshot (13)](https://github.com/user-attachments/assets/8a7d0ab1-bd76-4930-a1a6-ef8c9b795d68)
+![Screenshot (14)](https://github.com/user-attachments/assets/4671dfcb-c512-4d23-bd88-9e8419578091)
+![Screenshot (15)](https://github.com/user-attachments/assets/520720a6-54ac-4de0-ae58-e1be17da1d68)
+
 
 Insert gif or link to demo
 
