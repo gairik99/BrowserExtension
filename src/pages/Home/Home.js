@@ -20,7 +20,7 @@ function Home() {
     }
     return (
         <div className='home-container d-flex direction-column align-center gap-lg'>
-            <h1 className='main-heading'>Browser Extension</h1>
+            <h1 className='main-heading'>Easy Life</h1>
             <div className='user-details d-flex direction-column gap'>
                 <span className='heading-1'>Hi,what's your name?</span>
                 <form onSubmit={handleFormSubmit}>
