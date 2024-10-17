@@ -5,10 +5,10 @@ Easy Life is a cool browser extension that helps you with managing your daily
 task
 
 ## Features
-- Home Page
+- Home Page<br/>
 In the home page, you can start by adding your name and then press the enter key which will route you to the task page. If you refresh the home page you will see a different soothing background image.
 
-- Task Page
+- Task Page<br/>
 In the task page, you can add your main/focus task of the day, once you complete the task you can eihter check it or clear it to create a new task. There is a beautiful ToDo at the bottom right of the page that let's you add todos. When the dat changes the main task will be deleted but the todo will still be there.
 
 
